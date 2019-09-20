@@ -1,7 +1,6 @@
 steps:
   - name: 'gcr.io/cloud-builders/kubectl'
-    args: ['apply', '-R', '-f', 'app1']
+    args: ['apply', '-R', '-f', 'kubernetes']
     env:
       - 'CLOUDSDK_COMPUTE_ZONE=asia-northeast1-a'
       - 'CLOUDSDK_CONTAINER_CLUSTER=book'
-    dir: 'kubernetes'
